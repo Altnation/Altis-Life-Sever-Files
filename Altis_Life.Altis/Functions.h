@@ -296,7 +296,7 @@ class Life_Client_Core
 		class copSiren {};
 		class spikeStripEffect {};
 		class radar {};
-		class copUniform {};
+		//class copUniform {};
 		class questionDealer {};
 		class copInteractionMenu {};
 		class sirenLights {};
