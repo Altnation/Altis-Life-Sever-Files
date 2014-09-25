@@ -307,7 +307,8 @@ class Life_Client_Core
 		class fedCamDisplay {};
 		class copEnter {};
 		class copLoadout {};
-		class coploadGear {};		//Default Cop Loadout
+		class copLoadGear {};		//Default Cop Loadout
+		class copFetchGear {};
 		//...
 		class seizePlayerWeapon {};
 		class seizePlayerWeaponAction {};
