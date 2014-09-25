@@ -155,7 +155,9 @@ class Life_Client_Core
 		class weaponShopCfg {};
 		class vehicleWeightCfg {};
 		class houseConfig {};
-		class seizeCfg {};
+		//...
+		class seizeCgh {};
+		//...
 		
 		//Clothing Store Configs
 		class clothing_cop {};
@@ -294,7 +296,7 @@ class Life_Client_Core
 		class copSiren {};
 		class spikeStripEffect {};
 		class radar {};
-		//class copUniform {};
+		class copUniform {};
 		class questionDealer {};
 		class copInteractionMenu {};
 		class sirenLights {};
@@ -303,12 +305,13 @@ class Life_Client_Core
 		class repairDoor {};
 		class doorAnimate {};
 		class fedCamDisplay {};
-		class seizeObjects {};
-		class seizePlayerWeapon {};
-		class seizePlayerWeaponAction {};
 		class copEnter {};
 		class copLoadout {};
 		class coploadGear {};		//Default Cop Loadout
+		//...
+		class seizePlayerWeapon {};
+		class seizePlayerWeaponAction {};
+		//...
 	};
 	
 	class Gangs

@@ -1,39 +1,48 @@
 /*
 	File: fn_seizePlayerWeaponAction.sqf
 	Author: Skalicon
+	Slightly adapted by Daniel Larusso (Keep Calm and Roleplay)
 	
 	Description:
 	Removes the players weapons client side
 */
-removeAllWeapons player;
-if (uniform player in ["U_Rangemaster","U_B_CTRG_3"]) then {removeUniform player;};
-if (vest player in ["V_TacVest_blk_POLICE","V_TacVest_blk","V_PlateCarrier1_blk"]) then {removeVest player;};
-if (headgear player in ["H_MilCap_blue","H_MilCap_gry","H_Beret_blk_POLICE","H_Beret_Colonel","H_PilotHelmetHeli_B","H_CrewHelmetHeli_B"]) then {removeHeadgear player;};
-if (backpack player in ["B_Bergen_blk","B_Kitbag_mcamo_Eng"]) then {removeBackpack player;};
+private["_blacklist", "_itemArray","_primary","_handgun","_magazines","_uniform","_vest","_backpack","_items","_primitems","_secitems","_handgunitems","_uitems","_vitems","_bitems","_handle"];
 
-license_civ_gun = false;
-license_civ_vigilante = false;
-if(life_inv_heroinu > 0) then {[false,"heroinu",life_inv_heroinu] call life_fnc_handleInv;};
-if(life_inv_heroinp > 0) then {[false,"heroinp",life_inv_heroinp] call life_fnc_handleInv;};
-if(life_inv_coke > 0) then {[false,"cocaine",life_inv_coke] call life_fnc_handleInv;};
-if(life_inv_cokep > 0) then {[false,"cocainep",life_inv_cokep] call life_fnc_handleInv;};
-if(life_inv_turtle > 0) then {[false,"turtle",life_inv_turtle] call life_fnc_handleInv;};
-if(life_inv_cannabis > 0) then {[false,"cannabis",life_inv_cannabis] call life_fnc_handleInv;};
-if(life_inv_marijuana > 0) then {[false,"marijuana",life_inv_marijuana] call life_fnc_handleInv;};
-if(life_inv_lockpick > 0) then {[false,"lockpick",life_inv_lockpick] call life_fnc_handleInv;};
-if(life_inv_ephedra > 0) then {[false,"ephedra",life_inv_ephedra] call life_fnc_handleInv;};
-if(life_inv_ziptie > 0) then {[false,"ziptie",life_inv_ziptie] call life_fnc_handleInv;};
-if(life_inv_frog > 0) then {[false,"frog",life_inv_frog] call life_fnc_handleInv;};
-if(life_inv_frogp > 0) then {[false,"frogp",life_inv_frogp] call life_fnc_handleInv;};
-if(life_inv_methu > 0) then {[false,"methu",life_inv_methu] call life_fnc_handleInv;};
-if(life_inv_crystalmeth > 0) then {[false,"crystalmeth",life_inv_crystalmeth] call life_fnc_handleInv;};
-if(life_inv_mashu > 0) then {[false,"mashu",life_inv_mashu] call life_fnc_handleInv;};
-if(life_inv_moonshine > 0) then {[false,"moonshine",life_inv_moonshine] call life_fnc_handleInv;};
-if(life_inv_mmushroom > 0) then {[false,"mmushroom",life_inv_mmushroom] call life_fnc_handleInv;};
-if(life_inv_mmushroomp > 0) then {[false,"mmushroomp",life_inv_mmushroomp] call life_fnc_handleInv;};
+_blacklist = [1] call life_fnc_seizeCfg;
 
 
-[] call life_fnc_civFetchGear;
-[] call SOCK_fnc_updateRequest;
-[] call life_fnc_civLoadGear;
-titleText["The Illegal issued gear on your personnel has been seized.","PLAIN"];
+[] call life_fnc_saveGear;
+
+_itemArray = life_gear;
+if(count _itemArray == 0) exitWith {
+	[[52, player, format["%1 has no weapons", name cursorTarget]],"TON_fnc_logIt",false,false] spawn life_fnc_MP;
+};
+
+_uniform = [_itemArray,0,"",[""]] call BIS_fnc_param;
+_vest = [_itemArray,1,"",[""]] call BIS_fnc_param;
+_backpack = [_itemArray,2,"",[""]] call BIS_fnc_param;
+_goggles = [_itemArray,3,"",[""]] call BIS_fnc_param;
+_headgear = [_itemArray,4,"",[""]] call BIS_fnc_param;
+_items = [_itemArray,5,[],[[]]] call BIS_fnc_param;
+_prim = [_itemArray,6,"",[""]] call BIS_fnc_param;
+_seco = [_itemArray,7,"",[""]] call BIS_fnc_param;
+_uItems = [_itemArray,8,[],[[]]] call BIS_fnc_param;
+_uMags = [_itemArray,9,[],[[]]] call BIS_fnc_param;
+_bItems = [_itemArray,10,[],[[]]] call BIS_fnc_param;
+_bMags = [_itemArray,11,[],[[]]] call BIS_fnc_param;
+_vItems = [_itemArray,12,[],[[]]] call BIS_fnc_param;
+_vMags = [_itemArray,13,[],[[]]] call BIS_fnc_param;
+_pItems = [_itemArray,14,[],[[]]] call BIS_fnc_param;
+_hItems = [_itemArray,15,[],[[]]] call BIS_fnc_param;
+_yItems = [_itemArray,16,[],[[]]] call BIS_fnc_param;
+
+if(_prim in _blacklist) then { _prim = ""; };
+if(_seco in _blacklist) then { _seco = ""; };
+{if(_x in _blacklist) then { _uMags = _uMags - [_x]; }; } foreach _uMags;
+{if(_x in _blacklist) then { _vMags = _vMags - [_x]; }; } foreach _vMags;
+{if(_x in _blacklist) then { _bMags = _bMags - [_x]; }; } foreach _bMags;
+
+life_gear = [_uniform,_vest,_backpack,_goggles,_headgear,_items,_prim,_seco,_uItems,_uMags,_bItems,_bMags,_vItems,_vMags,_pItems,_hItems,_yItems];
+
+[] call life_fnc_loadGear;
+titleText["Their weapons and magazines were removed","PLAIN"];
