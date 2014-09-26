@@ -156,7 +156,7 @@ class Life_Client_Core
 		class vehicleWeightCfg {};
 		class houseConfig {};
 		//...
-		class seizeCgh {};
+		class seizeCfg {};
 		//...
 		
 		//Clothing Store Configs

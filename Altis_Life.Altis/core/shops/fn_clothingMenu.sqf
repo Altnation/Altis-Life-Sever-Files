@@ -162,6 +162,12 @@ if((life_clothing_purchase select 4) == -1) then
 			{[_x,true,true] call life_fnc_handleItem;} foreach life_oldBackpackItems;
 		};
 	};
+
+		//Hotfix in for cop gear
+		if(playerSide == west) then
+		{
+			[] call life_fnc_saveGear;
+		};
 };
 
 life_clothing_purchase = [-1,-1,-1,-1,-1];
