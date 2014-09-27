@@ -23,7 +23,6 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_ret pushBack ["U_B_CombatUniform_mcam_tshirt",nil,350];
-			_ret pushBack ["U_B_survival_uniform",nil,1250];
 		};
 		if(__GETC__(life_coplevel) > 2) then
 		{
@@ -70,7 +69,7 @@ switch (_filter) do
 		_ret pushBack ["V_Rangemaster_belt",nil,800];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["V_PlateCarrier2_rgr",nil,1500];
+			_ret pushBack ["V_TacVest_blk_POLICE",nil,1500];
 		};
 	};
 	

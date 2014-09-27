@@ -76,8 +76,8 @@ switch(_shop) do
 			{
 				["Altis Patrol Officer Shop",
 					[
-						["arifle_MX_F",nil,35000],
-						["arifle_MXM_F",nil,40000],
+						["arifle_MX_Black_F",nil,35000],
+						["arifle_MXM_Black_F",nil,40000],
 						["MineDetector",nil,1000],
 						["arifle_SDAR_F",nil,20000],
 						["acc_flashlight",nil,750],
@@ -104,8 +104,8 @@ switch(_shop) do
 			{
 				["Altis Sergeant Officer Shop",
 					[
-						["arifle_MXC_F",nil,30000],
-						["arifle_MX_SW_F",nil,60000],
+						["arifle_MXC_Black_F",nil,30000],
+						["arifle_MX_SW_Black_F",nil,60000],
 						["srifle_LRR_LRPS_F",nil,60000],
 						["acc_flashlight",nil,750],
 						["acc_pointer_IR",nil,750],

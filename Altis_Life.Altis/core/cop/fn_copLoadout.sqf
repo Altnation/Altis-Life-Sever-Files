@@ -12,31 +12,46 @@ _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
 //Load player with default cop gear.
-player addUniform "U_Rangemaster";
-player addVest "V_Rangemaster_belt";
-player addBackpack "B_Bergen_blk";
-
-player addWeapon "hgun_P07_snds_F";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-player addMagazine "16Rnd_9x21_Mag";
-
-/* ITEMS */
-player addItem "ItemMap";
-player assignItem "ItemMap";
-player addItem "ItemRadio";
-player assignItem "ItemRadio";
-player addItem "ItemCompass";
-player assignItem "ItemCompass";
-player addItem "ItemWatch";
-player assignItem "ItemWatch";
-player addItem "ItemGPS";
-player assignItem "ItemGPS";
-player addItem "NVGoggles";
-player assignItem "NVGoggles";
+	if(__GETC__(life_coplevel) == 1) then
+	{
+		player addUniform "U_Rangemaster";
+		player addVest "V_Rangemaster_belt";
+		player addMagazine "16Rnd_9x21_Mag";
+		player addMagazine "16Rnd_9x21_Mag";
+		player addMagazine "16Rnd_9x21_Mag";
+		player addMagazine "16Rnd_9x21_Mag";
+		player addMagazine "16Rnd_9x21_Mag";
+		player addWeapon "hgun_P07_snds_F";
+		player addItem "ItemMap";
+		player assignItem "ItemMap";
+		player addItem "ItemCompass";
+		player assignItem "ItemCompass";
+	};
+	
+	if(__GETC__(life_coplevel) > 1) then
+	{
+		player addUniform "U_B_CombatUniform_mcam_tshirt";
+		player addVest "V_TacVest_blk_POLICE";
+		player addMagazine "16Rnd_9x21_Mag";
+		player addMagazine "16Rnd_9x21_Mag";
+		player addMagazine "16Rnd_9x21_Mag";
+		player addMagazine "16Rnd_9x21_Mag";
+		player addMagazine "100Rnd_65x39_caseless_mag";
+		player addMagazine "100Rnd_65x39_caseless_mag";
+		player addMagazine "100Rnd_65x39_caseless_mag";
+		player addMagazine "100Rnd_65x39_caseless_mag";
+		player addMagazine "100Rnd_65x39_caseless_mag";
+		player addMagazine "100Rnd_65x39_caseless_mag_Tracer";
+		player addMagazine "100Rnd_65x39_caseless_mag_Tracer";
+		player addMagazine "100Rnd_65x39_caseless_mag_Tracer";
+		player addMagazine "100Rnd_65x39_caseless_mag_Tracer";
+		player addWeapon "arifle_MX_SW_Black_F";
+		player addWeapon "hgun_P07_snds_F";
+		player addItem "ItemMap";
+		player assignItem "ItemMap";
+		player addItem "ItemCompass";
+		player assignItem "ItemCompass";
+	};
 
 [] call life_fnc_saveGear;
 
