@@ -10,8 +10,6 @@ _handle = [] spawn life_fnc_stripDownPlayer;
 waitUntil {scriptDone _handle};
 
 //Load player with default cop gear.
-if(__GETC__(life_coplevel) == 1) then
-{
 	player addUniform "U_Rangemaster";
 	player addVest "V_Rangemaster_belt";
 	player addBackpack "B_Bergen_blk";
@@ -37,6 +35,6 @@ if(__GETC__(life_coplevel) == 1) then
 	player assignItem "ItemGPS";
 	player addItem "NVGoggles";
 	player assignItem "NVGoggles";
-};
+	
 [] call life_fnc_saveGear;
 
