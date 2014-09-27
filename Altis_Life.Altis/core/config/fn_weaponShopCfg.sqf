@@ -85,7 +85,7 @@ switch(_shop) do
 						["optic_Arco",nil,2500],
 						["muzzle_snds_H",nil,2750],
 						["30Rnd_65x39_caseless_mag",nil,130],
-						["30Rnd_65x39_caseless_mag_Tracer",nil,130],
+						["30Rnd_65x39_caseless_mag_Tracer","Rubber Bullets",130],
 						["20Rnd_556x45_UW_mag",nil,125],
 						["SmokeShellBlue","Tear Gas",100]
 					]
@@ -114,7 +114,7 @@ switch(_shop) do
 						["optic_LRPS",nil,2500],
 						["muzzle_snds_H",nil,2750],
 						["30Rnd_65x39_caseless_mag",nil,100],
-						["30Rnd_65x39_caseless_mag_Tracer",nil,130],
+						["30Rnd_65x39_caseless_mag_Tracer",""Rubber Bullets,130],
 						["100Rnd_65x39_caseless_mag",nil,130],
 						["100Rnd_65x39_caseless_mag_Tracer",nil,130],
 						["7Rnd_408_Mag",nil,200],
