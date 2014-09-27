@@ -29,16 +29,16 @@ switch(_shop) do
 			{
 				["Altis Cop Shop",
 					[
-						["hgun_P07_snds_F","Stun Pistol",2000],
-						["hgun_P07_F",nil,7500],
-						["Binocular",nil,150],
-						["ItemGPS",nil,100],
-						["ToolKit",nil,250],
-						["muzzle_snds_L",nil,650],
-						["FirstAidKit",nil,150],
-						["Medikit",nil,1000],
-						["NVGoggles",nil,2000],
-						["16Rnd_9x21_Mag",nil,50]
+						["hgun_P07_snds_F","Stun Pistol",0],
+						["hgun_P07_F",nil,0],
+						["Binocular",nil,0],
+						["ItemGPS",nil,0],
+						["ToolKit",nil,0],
+						["muzzle_snds_L",nil,0],
+						["FirstAidKit",nil,0],
+						["Medikit",nil,0],
+						["NVGoggles",nil,0],
+						["16Rnd_9x21_Mag",nil,0]
 					]
 				];
 			};
@@ -76,18 +76,18 @@ switch(_shop) do
 			{
 				["Altis Patrol Officer Shop",
 					[
-						["arifle_MX_Black_F",nil,35000],
-						["arifle_MXM_Black_F",nil,40000],
-						["MineDetector",nil,1000],
-						["arifle_SDAR_F",nil,20000],
-						["acc_flashlight",nil,750],
-						["optic_Holosight",nil,1200],
-						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,130],
-						["30Rnd_65x39_caseless_mag_Tracer","Rubber Bullets",130],
-						["20Rnd_556x45_UW_mag",nil,125],
-						["SmokeShellBlue","Tear Gas",100]
+						["arifle_MX_Black_F",nil,0],
+						["arifle_MXM_Black_F",nil,0],
+						["MineDetector",nil,0],
+						["arifle_SDAR_F",nil,0],
+						["acc_flashlight",nil,0],
+						["optic_Holosight",nil,0],
+						["optic_Arco",nil,0],
+						["muzzle_snds_H",nil,0],
+						["30Rnd_65x39_caseless_mag",nil,0],
+						["30Rnd_65x39_caseless_mag_Tracer","Rubber Bullets",0],
+						["20Rnd_556x45_UW_mag",nil,0],
+						["SmokeShellBlue","Tear Gas",0]
 					]
 				];
 			};
@@ -104,22 +104,22 @@ switch(_shop) do
 			{
 				["Altis Sergeant Officer Shop",
 					[
-						["arifle_MXC_Black_F",nil,30000],
-						["arifle_MX_SW_Black_F",nil,60000],
+						["arifle_MXC_Black_F",nil,0],
+						["arifle_MX_SW_Black_F",nil,0],
 						["srifle_LRR_LRPS_F",nil,60000],
-						["acc_flashlight",nil,750],
-						["acc_pointer_IR",nil,750],
-						["optic_Arco",nil,2500],
-						["optic_DMS",nil,2500],
-						["optic_LRPS",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,100],
-						["30Rnd_65x39_caseless_mag_Tracer",""Rubber Bullets,130],
-						["100Rnd_65x39_caseless_mag",nil,130],
-						["100Rnd_65x39_caseless_mag_Tracer",nil,130],
-						["7Rnd_408_Mag",nil,200],
-						["MiniGrenade","Flashbang",100],
-						["SmokeShellBlue","Tear Gas",100]
+						["acc_flashlight",nil,0],
+						["acc_pointer_IR",nil,0],
+						["optic_Arco",nil,0],
+						["optic_DMS",nil,0],
+						["optic_LRPS",nil,0],
+						["muzzle_snds_H",nil,0],
+						["30Rnd_65x39_caseless_mag",nil,0],
+						["30Rnd_65x39_caseless_mag_Tracer","Rubber Bullets",0],
+						["100Rnd_65x39_caseless_mag",nil,0],
+						["100Rnd_65x39_caseless_mag_Tracer",nil,0],
+						["7Rnd_408_Mag",nil,0],
+						["MiniGrenade","Flashbang",0],
+						["SmokeShellBlue","Tear Gas",0]
 					]
 				];
 			};
