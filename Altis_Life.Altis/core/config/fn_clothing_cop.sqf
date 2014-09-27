@@ -41,7 +41,7 @@ switch (_filter) do
 		
 		if(__GETC__(life_coplevel) > 2) then
 		{
-			_ret pushBack ["H_MilCap_mcamo",nil,0];
+			_ret pushBack ["H_cap_police",nil,0];
 		};
 	};
 	
