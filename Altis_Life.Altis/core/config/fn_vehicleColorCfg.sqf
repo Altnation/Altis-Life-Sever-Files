@@ -50,7 +50,8 @@ switch (_vehicle) do
 			["#(ai,64,64,1)Fresnel(0.3,3)","fed"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			["#(argb,8,8,3)color(0.6,0.3,0.01,1)","civ"],
-			["textures\pickup_medic.jpg","med"]
+			["textures\pickup_medic.jpg","med"],
+			["textures\pickup_police.jpg","cop"]
 		];
 	};
 	
