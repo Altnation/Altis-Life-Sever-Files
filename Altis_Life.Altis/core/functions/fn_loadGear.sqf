@@ -81,3 +81,5 @@ if(_backpack != "") then {_handle = [_backpack,true,false,false,false] spawn lif
 if(playerSide == independent && {uniform player == "U_Rangemaster"}) then {
 	[[player,0,"textures\medic_uniform.jpg"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 };
+
+[] call life_fnc_updateClothing;

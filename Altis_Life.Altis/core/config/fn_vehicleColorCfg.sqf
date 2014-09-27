@@ -159,7 +159,8 @@ switch (_vehicle) do
 		[
 			["\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa","cop"],
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","fed"],
-			["textures\med_hunter.jpg","med"]
+			["textures\med_hunter.jpg","med"],
+			["textures\hunter_police.jpg","cop"]
 		];
 	};
 	

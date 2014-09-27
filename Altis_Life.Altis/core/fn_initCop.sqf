@@ -28,3 +28,54 @@ player setVariable["rank",(__GETC__(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
+
+[] spawn
+{
+while {(uniform player) == "U_B_CombatUniform_mcam"} do
+    {
+	switch (__GETC__(life_coplevel)) do 
+		{
+			case 1: {
+			player setObjectTextureGlobal [0,"textures\cadet_shirt.jpg"];
+			};
+			
+			case 2: {
+			player setObjectTextureGlobal [0,"textures\police_shirt.jpg"];
+			};
+			
+			case 3: {
+			player setObjectTextureGlobal [0,"textures\police_shirt.jpg"];
+			};
+			
+			case 4: {
+			player setObjectTextureGlobal [0,"textures\police_shirt.jpg"];
+			};
+			
+			case 5: {
+			player setObjectTextureGlobal [0,"textures\police_shirt.jpg"];
+			};
+			
+			case 6: {
+			player setObjectTextureGlobal [0,"textures\police_shirt.jpg"];
+			};
+			
+			case 7: {
+			player setObjectTextureGlobal [0,"textures\police_shirt.jpg"];
+			};
+			
+			case 8: {
+			player setObjectTextureGlobal [0,"textures\police_shirt.jpg"];
+			};
+			
+			case 9: {
+			player setObjectTextureGlobal [0,"textures\police_shirt.jpg"];
+			};
+			
+			default {
+			player setObjectTextureGlobal [0,"textures\cadet_shirt.jpg"];
+			};
+		};
+    if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
+    sleep 30;
+    };
+};

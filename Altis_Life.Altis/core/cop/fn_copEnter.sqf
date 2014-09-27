@@ -1,6 +1,6 @@
 /*
 	File: fn_copEnter.sqf
-	Author: Skalicon
+	Author: I dunno, I do not care!
 	
 	Description:
 	Allows Cops to enter locked Vehicles
@@ -23,10 +23,10 @@ switch (_position) do
 		player action ["getInCargo", cursorTarget];
 		cursorTarget lock true;
 	};
-	case "commander":
+	case "gunner":
 	{
 		cursorTarget lock false;
-		player action ["getInTurret", cursorTarget, [0]];
+		player action ["getIngunner", cursorTarget];
 		cursorTarget lock true;
 	};
 	case "exit":
