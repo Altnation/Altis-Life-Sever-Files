@@ -219,12 +219,12 @@ switch(_shop) do
  		};
  	};
 	
-		case "combat":
+	case "combat":
 	{
 		switch(true) do
 		{
 			case (playerSide != civilian): {"You are not a civilian Please Leave!!"};
-			case (!license_civ_combat): {"You do not have the Combat License please leave!!"}
+			case (!license_civ_combat): {"You do not have the Combat License please leave!!"};
 			default
 			{
 				["Combat Weapons Shop",
