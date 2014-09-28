@@ -209,7 +209,7 @@ switch(_shop) do
 						["9Rnd_45ACP_Mag",nil,100],
 						["30Rnd_65x39_caseless_mag",nil,800],
 						["100Rnd_65x39_caseless_mag",nil,1200],
-						["",,]
+						["NLAW_F",nil,6000]
 					]
 				];
 			};
