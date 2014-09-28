@@ -181,41 +181,6 @@ switch(_shop) do
 		};
 	};
 	
-	case "combat":
-	{
-		switch(true) do
-		{
-			case (playerSide != civilian): {"You are not a civilian Please Leave!!"};
-			case (!license_civ_combat): {"You do not have the Combat License please leave!!"}
-			default
-			{
-				["Combat Weapons Shop",
-					[
-						["hgun_Rook40_F",nil,5000],
-						["hgun_ACPC2_F",nil,7500],
-						["hgun_Pistol_heavy_01_F",nil,10000],
-						["SMG_02_F",nil,15000],
-						["arifle_MXC_F",nil,30000],
-						["arifle_MX_F",nil,35000],
-						["arifle_MX_SW_F",nil,60000],
-						["arifle_MXM_F",nil,65000],
-						["optic_Arco",nil,3500],
-						["optic_ACO_grn",nil,1500],
-						["optic_SOS",nil,5000],
-						["optic_tws",nil,7500],
-						["NLAW_F",nil,6000],
-						["16Rnd_9x21_Mag",nil,150],
-						["30Rnd_9x21_Mag",nil,250],
-						["9Rnd_45ACP_Mag",nil,100],
-						["30Rnd_65x39_caseless_mag",nil,800],
-						["100Rnd_65x39_caseless_mag",nil,1200],
-						["NLAW_F",nil,6000]
-					]
-				];
-			};
-		};
-	};
-	
 	case "gang":
  	{
  		switch(true) do
@@ -253,6 +218,40 @@ switch(_shop) do
  			};
  		};
  	};
+	
+		case "combat":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"You are not a civilian Please Leave!!"};
+			case (!license_civ_combat): {"You do not have the Combat License please leave!!"}
+			default
+			{
+				["Combat Weapons Shop",
+					[
+						["hgun_Rook40_F",nil,5000],
+						["hgun_ACPC2_F",nil,7500],
+						["hgun_Pistol_heavy_01_F",nil,10000],
+						["SMG_02_F",nil,15000],
+						["arifle_MXC_F",nil,30000],
+						["arifle_MX_F",nil,35000],
+						["arifle_MX_SW_F",nil,60000],
+						["arifle_MXM_F",nil,65000],
+						["optic_Arco",nil,3500],
+						["optic_ACO_grn",nil,1500],
+						["optic_SOS",nil,5000],
+						["optic_tws",nil,7500],
+						["NLAW_F",nil,6000],
+						["16Rnd_9x21_Mag",nil,150],
+						["30Rnd_9x21_Mag",nil,250],
+						["9Rnd_45ACP_Mag",nil,100],
+						["30Rnd_65x39_caseless_mag",nil,800],
+						["100Rnd_65x39_caseless_mag",nil,1200]
+					]
+				];
+			};
+		};
+	};
 	
 	case "genstore":
 	{
