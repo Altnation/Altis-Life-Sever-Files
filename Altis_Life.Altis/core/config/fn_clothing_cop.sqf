@@ -24,10 +24,6 @@ switch (_filter) do
 		{
 			_ret pushBack ["U_B_CombatUniform_mcam_tshirt",nil,0];
 		};
-		if(__GETC__(life_coplevel) > 2) then
-		{
-			_ret pushBack ["U_B_CombatUniform_mcam_worn",nil,0];
-		};
 	};
 	
 	//Hats
