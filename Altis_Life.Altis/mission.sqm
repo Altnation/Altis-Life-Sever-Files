@@ -3585,14 +3585,14 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={12795.632,86.392281,16709.67};
-					azimut=125;
+					position[]={12795.57,86.580635,16692.244};
+					azimut=114.293;
 					id=216;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					leader=1;
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Combat Weapon Shop"",life_fnc_weaponShopMenu,""combat""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Combat Weapon Shop"",life_fnc_weaponShopMenu,""combat""]; this addAction[""Combat Clothing Shop"",life_fnc_clothingMenu,""combat""];";
 				};
 			};
 		};

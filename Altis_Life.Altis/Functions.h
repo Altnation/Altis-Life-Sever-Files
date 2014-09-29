@@ -166,7 +166,7 @@ class Life_Client_Core
 		class clothing_reb {};
 		class clothing_dive {};
 		class clothing_kart {};
-		class clothing_donator {};
+		class clothing_combat {};
 	};
 
 	class Player_Menu
