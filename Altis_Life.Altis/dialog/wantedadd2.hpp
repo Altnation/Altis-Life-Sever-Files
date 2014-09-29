@@ -43,7 +43,7 @@ class life_wantedadd2 {
 			idc = 9902;
 			text = "";
 			sizeEx = 0.035;
-			colorBackground[] = {0,0,0,0};
+			//colorBackground[] = {0,0,0,0};
 			onLBSelChanged = "[_this] spawn life_fnc_adminQuery";
 			
 			x = 0.12; y = 0.25;
@@ -60,7 +60,7 @@ class life_wantedadd2 {
 			y = 0.25;
 			w = 0.45;
 			h = 0.4;
-            onLBSelChanged="call fnc_Cmb_changed;";
+           // onLBSelChanged="call fnc_Cmb_changed;";
 //--- action/function to call when listbox or combobox has been changed
  
         };
@@ -74,7 +74,7 @@ class life_wantedadd2 {
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.88 - (1 / 25);
 			w = 0.18;
-			w = (6.25 / 40);
+			//w = (6.25 / 40);
 			h = (1 / 25);
 		};
 		
@@ -86,7 +86,7 @@ class life_wantedadd2 {
 			x = 0.26 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.88 - (1 / 25);
 			w = 0.18;
-			w = (6.25 / 40);
+			//w = (6.25 / 40);
 			h = (1 / 25);
 		};		
 		

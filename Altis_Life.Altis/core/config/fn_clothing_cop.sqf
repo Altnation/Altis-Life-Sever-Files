@@ -19,10 +19,10 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret pushBack ["U_Rangemaster","Cop Uniform",0];
+		_ret pushBack ["U_Competitor","Cadet Uniform",0];
 		if(__GETC__(life_coplevel) > 1) then
 		{
-			_ret pushBack ["U_B_CombatUniform_mcam_tshirt",nil,0];
+			_ret pushBack ["U_Rangemaster","Cop Uniform",0];
 		};
 	};
 	
