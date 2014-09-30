@@ -22,6 +22,7 @@ switch (_filter) do
 			["U_I_G_Story_Protagonist_F",nil,7500],
 			["U_I_G_resistanceLeader_F",nil,11500],
 			["U_O_SpecopsUniform_ocamo",nil,17500],
+			["U_O_CombatUniform_oucamo",nil,17500],
 			["U_O_PilotCoveralls",nil,15610],
 			["U_IG_leader","Guerilla Leader",15340],
 			["U_O_GhillieSuit",nil,50000]
@@ -62,6 +63,8 @@ switch (_filter) do
 	{
 		[
 			["V_TacVest_khk",nil,12500],
+			["V_TacVest_oli",nil,12500],
+			["V_TacVest_blk",nil,12500],
 			["V_BandollierB_cbr",nil,4500],
 			["V_HarnessO_brn",nil,7500]
 		];
@@ -78,7 +81,8 @@ switch (_filter) do
 			["B_Bergen_sgg",nil,4500],
 			["B_Kitbag_cbr",nil,4500],
 			["B_Carryall_oli",nil,5000],
-			["B_Carryall_khk",nil,5000]
+			["B_Carryall_khk",nil,5000],
+			["B_Carryall_oucamo",nil,5000]
 		];
 	};
 };
