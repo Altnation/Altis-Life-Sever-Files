@@ -1,4 +1,4 @@
-555555555555555555555555/*
+/*
 	This is the AltNation wanted2 file 
 	coded by ReVzItsDaveo
 	for the AltNation Community
@@ -18,4 +18,4 @@ if(isNull _unit) exitWith {ctrlShow[2001,true];};
 
 [[1,format["%1 has been added to the wanted list.",name _unit,_amount,getPlayerUID _unit]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 
-[[getPlayerUID _unit,name _unit,_amount],"life_fnc_wantedadd2",false,false] spawn life_fnc_MP;
+[[getPlayerUID _unit,name _unit,_amount],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;

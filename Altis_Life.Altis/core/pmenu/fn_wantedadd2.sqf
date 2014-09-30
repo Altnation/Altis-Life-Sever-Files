@@ -29,22 +29,22 @@ lbClear _list2;
 //lbSetData [_list2, _index, "pfad/zum/bild.paa"];
 //lbSetValue [_list2, _index, "pfad/zum/bild.paa"];
 
-_text = "Driving Without a License $11500";
+_text = "Driving Without a License $1500";
 _data = "1";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Attempted theft of a vehicle $13500";
+_text = "Attempted theft of a vehicle $3500";
 _data = "2";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Grand Theft Auto $15000";
+_text = "Grand Theft Auto $5000";
 _data = "3";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Driving Without Lights $1350";
+_text = "Driving Without Lights $350";
 _data = "4";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
@@ -54,7 +54,7 @@ _data = "5";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];
 
-_text = "Dangerous Driving $12500";
+_text = "Dangerous Driving $2500";
 _data = "6";
 _list2 lbAdd format["%1 (%2)",_text,_data];
 _list2 lbSetData [(lbSize _list2)-1,_data];

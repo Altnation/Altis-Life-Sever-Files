@@ -53,7 +53,7 @@ switch(_type) do
     case "17": {_type = ["Insulting Behaviour",2500]};
     case "18": {_type = ["Insulting the police",8000]};
     case "19": {_type = ["Entering the Police HQ",5000]};
-    case "20": {_type = ["Murder on Police",25000]};
+    case "20": {_type = ["Murder on Police",75000]};
     case "21": {_type = ["Bombardment on Police/Officials/Properties",15000]};
     case "22": {_type = ["Destruction of police property",15000]};
     case "23": {_type = ["Possession of an illegle substance",12000]};
