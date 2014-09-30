@@ -82,7 +82,7 @@ __CONST__(life_impound_car,350);
 __CONST__(life_impound_boat,250);
 __CONST__(life_impound_air,850);
 life_istazed = false;
-life_donator = 0;
+//life_donator = 0;
 life_isdowned = false;
 life_my_gang = ObjNull;
 
