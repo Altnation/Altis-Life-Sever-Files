@@ -190,8 +190,8 @@ class Life_Client_Core
 		class updateViewDistance {};
 		class settingsMenu {};
 		class settingsInit {};
-		//class wantedadd2 {};
-		//class wanted2 {};
+		class wantedadd2 {};
+		class wanted2 {};
 	};
 	
 	class Functions
@@ -318,8 +318,6 @@ class Life_Client_Core
 		class seizePlayerWeapon {};
 		class seizePlayerWeaponAction {};
 		//...
-		class wantedadd2 {};
-		class wanted2 {};
 	};
 	
 	class Gangs
