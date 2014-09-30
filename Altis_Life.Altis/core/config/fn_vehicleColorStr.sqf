@@ -135,6 +135,7 @@ switch (_vehicle) do
 			case 13: {_color = "Rebel Digital"};
 			case 14: {_color = "EMS White"};
 			case 15: {_color = "EMS AltNation"};
+			case 16: {_color = "Ivyys Heli"};
 		};
 	};
 	
