@@ -47,6 +47,13 @@ class CfgSounds
 		titles[] = {};
 	};
 	
+	class MedicSiren
+	{
+		name = "MedicSiren";
+		sound[] = "\sounds\Medic_Siren.ogg";
+		titles[] = "";
+	};
+	
 	class tazersound
 	{
 		name = "Tazersound";
@@ -59,6 +66,13 @@ class CfgSounds
 		name = "flashbang";
 		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
 		titles[] = {};
+	};
+	
+	class unlock
+	{
+		name = "unlock";
+		sound[] = "\sounds\unlock.ogg";
+		titles[] = "";
 	};
 };
 
