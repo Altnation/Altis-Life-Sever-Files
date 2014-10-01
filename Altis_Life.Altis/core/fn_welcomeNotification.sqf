@@ -3,7 +3,6 @@
 	
 	Description:
 	Called upon first spawn selection and welcomes our player.
-*/
 format["Welcome %1, Please read the following as it is important!",profileName] hintC
 [
 	"Welcome to the server! A few things have changed with Altis Life RPG that you need to be aware of!",
@@ -17,4 +16,4 @@ format["Welcome %1, Please read the following as it is important!",profileName] 
 	"If you are having issues with interacting / picking up items just wait. A quick way to know when you can interact with that item if the server allows it is by pressing your tilde key (~) and using the circle to highlight the object, when it says for example 'Pile of Money' then
 	that means you can pick it up!."
 ];
-	
+*/	
