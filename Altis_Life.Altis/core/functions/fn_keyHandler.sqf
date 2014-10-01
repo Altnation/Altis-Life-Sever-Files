@@ -239,7 +239,7 @@ switch (_code) do
 							[[_veh,0],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};
 						systemChat localize "STR_MISC_VehUnlock";
-						player say3D "unlock";
+						_veh say3D "unlock";
 					} else {
 						if(local _veh) then {
 							_veh lock 2;
@@ -247,7 +247,7 @@ switch (_code) do
 							[[_veh,2],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
 						};	
 						systemChat localize "STR_MISC_VehLock";
-						player say3D "car_lock";
+						_veh say3D "car_lock";
 					};
 				};
 			};
