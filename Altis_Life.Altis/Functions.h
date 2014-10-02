@@ -116,6 +116,9 @@ class Life_Client_Core
 		class robAction {};
 		class captureHideout {};
 		class gather {};
+		class gatherCocaine {};
+		class gatherCannabis {};
+		class gatherHeroin {};
 	};
 	
 	class Housing
