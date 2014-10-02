@@ -1,4 +1,4 @@
-author = "Tonic";
+56author = "Tonic";
 onLoadName = "Altis Life RPG v3.1.4.7";
 onLoadMission = "A RPG game mode developed by Tonic";
 joinUnassigned = 1;
@@ -50,7 +50,7 @@ class CfgSounds
 	class MedicSiren
 	{
 		name = "MedicSiren";
-		sound[] = "\sounds\Medic_Siren.ogg";
+		sound[] = {"\sounds\Medic_Siren.ogg"};
 		titles[] = {};
 	};
 	
