@@ -36,4 +36,9 @@ switch (_type) do
 	case "mair": {15000};
 	case "home": {75000};
 	case "combat": {100000};
+	case "don1": {20000};
+	case "don2": {20000};
+	case "don3": {20000};
+	case "don4": {20000};
+	case "don5": {20000};
 };

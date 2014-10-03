@@ -231,7 +231,6 @@ switch(_shop) do
 					[
 						["hgun_Rook40_F",nil,5000],
 						["hgun_ACPC2_F",nil,7500],
-						["hgun_Pistol_heavy_01_F",nil,10000],
 						["SMG_02_F",nil,15000],
 						["arifle_MXC_F",nil,30000],
 						["arifle_MX_F",nil,35000],
@@ -253,142 +252,24 @@ switch(_shop) do
 		};
 	};
 	
-	case "donator":
+	case "don1":
 	{
 		switch(true) do
 		{
-			case (__GETC__(life_donator) < 0): {"You are not a donator!"};
-			case (__GETC__(life_donator) == 1):
+			case (playerside != civilian): {"You are not a civilian!!!"};
+			case (!license_civ_don1): {"You are not a Donator!!!"};
+			default
 			{
-				["STS Donator Shop Tier 1",
+				["Donator tier 1",
 					[
-						["hgun_Pistol_heavy_01_F",nil,750],
-						["SMG_01_F",nil,30000],
-						["SMG_02_F",nil,30000],
-						["optic_ACO_grn_smg",nil,750],
-						["ToolKit",nil,50],
-						["itemgps",nil,50],
-						["Rangefinder",nil,50],
-						["16Rnd_9x21_Mag",nil,25],
-						["11Rnd_45ACP_Mag",nil,25],
-						["30Rnd_9x21_Mag",nil,25],
-						["30Rnd_45ACP_Mag_SMG_01",nil,75]
-					]
-				];
-			};
-
-			case (__GETC__(life_donator) == 2):
-			{
-				["STS Donator Shop Tier 2",
-					[
-						["hgun_Pistol_heavy_01_F",nil,750],
-						["SMG_01_F",nil,30000],
-						["SMG_02_F",nil,30000],
-						["arifle_TRG21_F",nil,30000],
-						["arifle_Mk20_F",nil,30000],
-						["optic_ACO_grn_smg",nil,750],
-						["optic_MRCO",nil,750],
-						["ToolKit",nil,50],
-						["itemgps",nil,50],
-						["Rangefinder",nil,50],
-						["16Rnd_9x21_Mag",nil,25],
-						["11Rnd_45ACP_Mag",nil,25],
-						["30Rnd_9x21_Mag",nil,25],
-						["30Rnd_45ACP_Mag_SMG_01",nil,75],
-						["30Rnd_556x45_Stanag",nil,25]
-					]
-				];
-			};
-
-			case (__GETC__(life_donator) == 3):
-			{
-				["STS Donator Shop Tier 3",
-					[
-						["hgun_Pistol_heavy_01_F",nil,750],
-						["SMG_01_F",nil,30000],
-						["SMG_02_F",nil,30000],
-						["arifle_TRG21_F",nil,30000],
-						["arifle_Mk20_F",nil,30000],
-						["srifle_DMR_01_F",nil,75000],
-						["arifle_MXM_F",nil,75000],
-						["optic_ACO_grn_smg",nil,750],
-						["optic_MRCO",nil,750],
-						["optic_DMS",nil,750],
-						["ToolKit",nil,50],
-						["itemgps",nil,50],
-						["Rangefinder",nil,50],
-						["16Rnd_9x21_Mag",nil,25],
-						["11Rnd_45ACP_Mag",nil,25],
-						["30Rnd_9x21_Mag",nil,25],
-						["30Rnd_45ACP_Mag_SMG_01",nil,75],
-						["30Rnd_556x45_Stanag",nil,25],
-						["10Rnd_762x51_Mag",nil,175],
-						["30Rnd_65x39_caseless_mag",nil,175]
-					]
-				];
-			};
-			case (__GETC__(life_donator) == 4):
-			{
-				["STS Donator Shop Tier 4",
-					[
-						["hgun_Pistol_heavy_01_F",nil,750],
-						["SMG_01_F",nil,30000],
-						["SMG_02_F",nil,30000],
-						["arifle_TRG21_F",nil,30000],
-						["arifle_Mk20_F",nil,30000],
-						["srifle_DMR_01_F",nil,75000],
-						["arifle_MXM_F",nil,75000],
-						["LMG_Mk200_F",nil,250000],
-						["optic_ACO_grn_smg",nil,750],
-						["optic_MRCO",nil,750],
-						["optic_DMS",nil,750],
-						["optic_NVS",nil,750],
-						["ToolKit",nil,50],
-						["itemgps",nil,50],
-						["Rangefinder",nil,50],
-						["16Rnd_9x21_Mag",nil,25],
-						["11Rnd_45ACP_Mag",nil,25],
-						["30Rnd_9x21_Mag",nil,25],
-						["30Rnd_45ACP_Mag_SMG_01",nil,75],
-						["30Rnd_556x45_Stanag",nil,75],
-						["10Rnd_762x51_Mag",nil,175],
-						["30Rnd_65x39_caseless_mag",nil,175],
-						["200Rnd_65x39_cased_Box",nil,50000]
-						
-					]
-				];
-			};
-			case (__GETC__(life_donator) == 5):
-			{
-				["STS Donator Shop Tier 5",
-					[
-						["hgun_Pistol_heavy_01_F",nil,750],
-						["SMG_01_F",nil,30000],
-						["SMG_02_F",nil,30000],
-						["arifle_TRG21_F",nil,30000],
-						["arifle_Mk20_F",nil,30000],
-						["srifle_DMR_01_F",nil,75000],
-						["arifle_MXM_Black_F",nil,75000],
-						["LMG_Mk200_F",nil,250000],
-						["LMG_Zafir_F",nil,275000],
-						["launch_O_Titan_short_F",nil,300000],
-						["optic_ACO_grn_smg",nil,750],
-						["optic_MRCO",nil,750],
-						["optic_DMS",nil,750],
-						["optic_NVS",nil,750],
-						["ToolKit",nil,50],
-						["itemgps",nil,50],
-						["Rangefinder",nil,50],
-						["16Rnd_9x21_Mag",nil,25],
-						["11Rnd_45ACP_Mag",nil,25],
-						["30Rnd_9x21_Mag",nil,25],
-						["30Rnd_45ACP_Mag_SMG_01",nil,75],
-						["30Rnd_556x45_Stanag",nil,75],
-						["10Rnd_762x51_Mag",nil,175],
-						["30Rnd_65x39_caseless_mag",nil,175],
-						["200Rnd_65x39_cased_Box",nil,50000],
-						["150Rnd_762x51_Box",nil,45000],
-						["Titan_AP",nil,20000]
+						["hgun_Pistol_heavy_01_F",nil,10000],
+						["SMG_01_F",nil,20000],
+						["Rangefinder",nil,600],
+						["NVGoggles_INDEP",nil,2000],
+						["optic_Arco",nil,2000],
+						["optic_MRCO",nil,2500],
+						["11Rnd_45ACP_Mag",nil,150],
+						["30Rnd_45ACP_Mag_SMG_01",nil,300]
 					]
 				];
 			};

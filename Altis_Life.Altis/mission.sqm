@@ -3504,25 +3504,6 @@ class Mission
 		};
 		class Item84
 		{
-			side="CIV";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={8372.4629,179.94757,18250.363};
-					azimut=160;
-					id=213;
-					side="CIV";
-					vehicle="C_man_1";
-					leader=1;
-					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Donator Weapon Shop"",life_fnc_weaponShopMenu,""donator"",0,false,false,"""",' !isNil ""life_donator"" && (call life_donator) > 0 && playerSide == civilian']; this addAction[""<t color='#ADFF2F'>ATM</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; ";
-				};
-			};
-		};
-		class Item85
-		{
 			side="LOGIC";
 			class Vehicles
 			{
@@ -3558,7 +3539,7 @@ class Mission
 							typeName="Forced";
 						};
 					};
-					id=214;
+					id=213;
 					side="LOGIC";
 					vehicle="ModuleCurator_F";
 					leader=1;
@@ -3568,7 +3549,7 @@ class Mission
 				};
 			};
 		};
-		class Item86
+		class Item85
 		{
 			side="WEST";
 			class Vehicles
@@ -3578,12 +3559,31 @@ class Mission
 				{
 					position[]={12795.57,86.580635,16692.244};
 					azimut=114.293;
-					id=215;
+					id=214;
 					side="WEST";
 					vehicle="B_Soldier_F";
 					leader=1;
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Combat Weapon Shop"",life_fnc_weaponShopMenu,""combat""]; this addAction[""Combat Clothing Shop"",life_fnc_clothingMenu,""combat""];";
+				};
+			};
+		};
+		class Item86
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={14252.417,3.3544044,13050.89};
+					azimut=173.673;
+					id=215;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					skill=0.60000002;
+					init="this enableSimulation false; this allowDamage false; this addAction[""Donator Shop Tier 1"",life_fnc_weaponShopMenu,""don1"",0,false,false,"""",' license_civ_don1 && playerSide == civilian'];";
 				};
 			};
 		};
@@ -9515,7 +9515,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=221;
+		items=220;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -9647,7 +9647,7 @@ class Mission
 		};
 		class Item18
 		{
-			position[]={14276.118,4.1247582,13044.42};
+			position[]={13698.159,4.3969545,13196.857};
 			name="CG";
 			text="Coast Guard ";
 			type="Empty";
@@ -11217,34 +11217,26 @@ class Mission
 		};
 		class Item215
 		{
-			position[]={8374.377,179.97705,18249.619};
-			name="ds";
-			text="Donator Shop";
-			type="mil_box";
-			colorName="ColorYellow";
-		};
-		class Item216
-		{
 			position[]={838.35413,-185.97,29599.732};
 			name="Website";
 			text="http://www.altnation.enjin.com";
 			type="flag_UK";
 		};
-		class Item217
+		class Item216
 		{
 			position[]={863.31653,-0.012322679,28850.873};
 			name="TeamSpeak";
 			text="TeamSpeak IP: 85.236.100.32:12247";
 			type="flag_USA";
 		};
-		class Item218
+		class Item217
 		{
 			position[]={9174.5264,14.452502,21644.633};
 			name="car_g_4";
 			type="Empty";
 			angle=151.72;
 		};
-		class Item219
+		class Item218
 		{
 			position[]={12810.948,87.754921,16671.789};
 			name="Combat";
@@ -11252,7 +11244,7 @@ class Mission
 			type="mil_dot";
 			colorName="ColorBlue";
 		};
-		class Item220
+		class Item219
 		{
 			position[]={3765.9829,34.289246,12366.01};
 			name="car_g_5";
