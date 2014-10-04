@@ -3583,7 +3583,7 @@ class Mission
 					vehicle="C_man_1";
 					leader=1;
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Donator Shop Tier 1"",life_fnc_weaponShopMenu,""don1"",0,false,false,"""",' license_civ_don1 && playerSide == civilian'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Donator Shop Tier 1"",life_fnc_weaponShopMenu,""don1"",0,false,false,"""",' license_civ_don1 && playerSide == civilian']; this addAction[""Donator Shop Tier 2"",life_fnc_weaponShopMenu,""don2"",0,false,false,"""",' license_civ_don2 && playerSide == civilian']; this addAction[""Donator Shop Tier 3"",life_fnc_weaponShopMenu,""don3"",0,false,false,"""",' license_civ_don3 && playerSide == civilian']; this addAction[""Donator Shop Tier 4"",life_fnc_weaponShopMenu,""don4"",0,false,false,"""",' license_civ_don4 && playerSide == civilian']; this addAction[""Donator Shop Tier 5"",life_fnc_weaponShopMenu,""don5"",0,false,false,"""",' license_civ_don5 && playerSide == civilian'];";
 				};
 			};
 		};
