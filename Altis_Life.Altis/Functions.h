@@ -119,6 +119,7 @@ class Life_Client_Core
 		class gatherCocaine {};
 		class gatherCannabis {};
 		class gatherHeroin {};
+		class suicideVest {};
 	};
 	
 	class Housing
