@@ -256,7 +256,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerside != civilian): {"You are not a civilian!!!"};
+			case (playerSide != civilian): {"You are not a civilian!!!"};
 			case (!license_civ_don1): {"You are not a Donator!!!"};
 			default
 			{
@@ -281,7 +281,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerside != civilian): {"You are not a civilian!!!"};
+			case (playerSide != civilian): {"You are not a civilian!!!"};
 			case (!license_civ_don2): {"You are not a Donator!!!"};
 			default
 			{
@@ -306,11 +306,11 @@ switch(_shop) do
 		};
 	};
 	
-	case "don2":
+	case "don3":
 	{
 		switch(true) do
 		{
-			case (playerside != civilian): {"You are not a civilian!!!"};
+			case (playerSide != civilian): {"You are not a civilian!!!"};
 			case (!license_civ_don3): {"You are not a Donator!!!"};
 			default
 			{
@@ -340,11 +340,11 @@ switch(_shop) do
 		};
 	};
 	
-	case "don2":
+	case "don4":
 	{
 		switch(true) do
 		{
-			case (playerside != civilian): {"You are not a civilian!!!"};
+			case (playerSide != civilian): {"You are not a civilian!!!"};
 			case (!license_civ_don4): {"You are not a Donator!!!"};
 			default
 			{
@@ -377,11 +377,11 @@ switch(_shop) do
 		};
 	};
 	
-	case "don2":
+	case "don5":
 	{
 		switch(true) do
 		{
-			case (playerside != civilian): {"You are not a civilian!!!"};
+			case (playerSide != civilian): {"You are not a civilian!!!"};
 			case (!license_civ_don5): {"You are not a Donator!!!"};
 			default
 			{
